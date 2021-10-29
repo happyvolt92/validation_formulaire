@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire de contact</title>
+</head>
+<body>
+    <main>
+        <img src="media/enveloppe.svg" alt="Enveloppe courrier">    
+        <form method="post">
+            <h1>Get in touch</h1>
+            <input type="text" name="name" id="name" placeholder="Name" pattern="[a-zA-Z]{2,}" />
+            <input type="email" name="email" id="email" placeholder="Email"
+                pattern="[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([_\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})" /> 
+            <input type="text" name="subject" id="subject" placeholder="Subject" />
+            <textarea name="message" id="message" rows="8" placeholder="Message"></textarea> 
+            <button id="envoyer" type="submit" class="envoyer"> 
+                Send Email &#x27A1;
+            </button>
+        </form>
+    </main>
+</body>
+
+</html>
