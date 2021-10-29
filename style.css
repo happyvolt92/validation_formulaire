@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('police/montserrat-bold-webfont.eot');
+    src: url('police/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('police/montserrat-bold-webfont.woff2') format('woff2'),
+        url('police/montserrat-bold-webfont.woff') format('woff'),
+        url('police/montserrat-bold-webfont.ttf') format('truetype'),
+        url('police/montserrat-bold-webfont.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@media (max-width:1080px) {
+    main {
+        width: 90vw;
+        height: 85vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        background-color: white;
+        border-radius: 1vw;
+        margin-top: 7.5vh;
+        margin-bottom: 7.5vh;
+    }
+    form {
+        margin-top: 3vh;
+    }
+    img {
+        display: none;
+    }
+    input,
+    #message {
+        width: 75vw;
+        margin-bottom: 3vh;
+        font-size: 1rem;
+        border-radius: 2rem;
+        padding-left: 4vw;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        transform: scale(1);
+        transition-duration: 2000ms;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    button {
+        padding-left: 4vw;
+        padding-right: 4vw;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+    #message {
+        height: 8vh;
+    }
+}
+@media(min-width:1080px) {
+    main {
+        width: 87vw;
+        height: 89vh;
+        background-color: white;
+        margin-left: 6.5vw;
+        border-radius: 1vw;
+        margin-top: 5.5vh;
+    }
+    form {
+        margin-top: 8vh;
+    }
+    input {
+        width: 31vw;
+        margin-bottom: 3vh;
+    }
+    #message {
+        width: 31vw;
+        margin-bottom: 3vh;
+        height: 16vh;
+    }
+    input,
+    #message {
+        transform: scale(1);
+        transition-duration: 2000ms;
+    }
+    button {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    input,
+    #message {
+        border-radius: 2rem;
+        padding-left: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+body {
+    margin: 00;
+    padding: 0;
+    background: linear-gradient(90deg, #0072ff, #01c7ff);
+}
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: #333333;
+}
+h1 {
+    margin-bottom: 8vh;
+    font-size: 1.4rem;
+}
+input {
+    border: none;
+    background-color: #e6e6e6;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: #9a9999;
+}
+#message {
+    border: none;
+    background-color: #e6e6e6;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: #9a9999;
+    resize: none;
+}
+button {
+    background-color: #57b846;
+    border-radius: 3rem;
+    color: white;
+    font-family: Montserrat;
+    font-weight: bold;
+    border: none;
+}
+img {
+    height: 50vh;
+    align-self: center;
+    margin-top: 8vh;
+}
+button:hover {
+    background-color: turquoise;
+}
+input:invalid {
+    border: red solid 3px;
+    transition: unset;
+}
+input:focus,
+#message:focus,
+button:focus {
+    outline: none;
+}
